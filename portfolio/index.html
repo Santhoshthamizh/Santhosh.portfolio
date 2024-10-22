@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santhosh</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- CSS Styles -->
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: hwb(0 0% 100%);
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        .navbar .logo {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: hsl(0, 0%, 100%);
+            font-size: 18px;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .hero h1 span {
+            color: #4caf50;
+        }
+
+        .cta-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 50px;
+            background-color: hsl(201, 70%, 61%);
+            text-align: center;
+        }
+
+        .project-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            width: 30%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f5f5f5;
+        }
+
+
+        /* About Section */
+        .about,
+        .Education,
+        .Internship,
+        .skills {
+            padding: 0px;
+            background-color: z#f5f5f5;
+            text-align: left;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 50px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .aboutmain {
+            display: flex;
+            /* Arrange children in a row */
+            justify-content: space-evenly;
+            /* Space evenly between sections */
+            align-items: flex-start;
+            /* Align sections to the top */
+            /* Space between sections */
+            padding: 100px;
+            min-height: 10vh;
+            /* Full viewport height */
+            background-color: rgb(235, 235, 235);
+            flex-wrap: wrap;
+            /* Allow wrapping on smaller screens */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="IMG_20241015_093622.jpg" width="250" height="250">
+        <br>
+        <h1>Hello, I'm <span>SANTHOSH</span></h1>
+        <br>
+        <h2>
+            A passionate frontend developer and data analyst with expertise in building intuitive user interfaces <br>
+            and transforming complex datasets into actionable insights, blending technical proficiency with analytical
+            <br>
+            thinking to deliver data-driven solutions. <br>
+
+        </h2>
+        <a href="#projects" class="cta-button">VIEW MY WORK</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <br>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>COLLEGE LIBRARY</h3>
+                <br>
+                <p>Create a library management web app with a book catalog, user authentication, and borrowing features.
+                </p>
+            </div>
+            <div class="project-card">
+                <h3>PORTFOLIO WEBSITE</h3>
+                <br>
+                <p>A personal portfolio to showcase your projects, resume, and contact details.</p>
+            </div>
+            <div class="project-card">
+                <h3>E-COMMERCE STORE</h3>
+                <br>
+                <p>Build an online store with product pages, shopping carts, and payment integration (like Stripe).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="aboutmain" class="aboutmain">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <br>
+            <p> Name: Santhosh <br>
+                Phone: 7418928412<br>
+                gmail: santhoshthamizh2004@gmail.com <br>
+                Address: Chidambaram, <br>
+                Cudddalore(dt) <br>
+            </p>
+        </section>
+        <section id="Education" class="Education">
+            <h2>Education</h2>
+            <br>
+            <div>
+                <p>B.TECH-INFORMATION TECHNOLOGY</p>
+                <H3>Info institute of engineering </H3>
+                <p>2022-2026</p>
+            </div>
+        </section>
+        <section id="Internship" class="Internship">
+            <div>
+                <h2>Internship</h2>
+                <br>
+                <p>I completed an internship at Zoho, <br>
+                    gaining hands-on experience in web development <br>
+                    and enhancing my skills in user interface design." <br>
+                </p>
+            </div>
+        </section>
+
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Contact Form Submission Handling
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you! Your message has been sent.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
